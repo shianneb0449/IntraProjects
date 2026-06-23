@@ -68,10 +68,11 @@ const STATUS_FILTERS: Array<CharterStatus | "All"> = ["All", "Active", "Planning
 interface Props {
   charters: MockCharter[];
   onNewCharter?: () => void;
-  compact?: boolean; // true = dashboard mode (no search bar, fewer columns)
+  onRowClick?: (id: string) => void;
+  compact?: boolean;
 }
 
-export function CharterTable({ charters, onNewCharter, compact = false }: Props) {
+export function CharterTable({ charters, onNewCharter, onRowClick, compact = false }: Props) {
   const [filterStatus, setFilterStatus] = useState<CharterStatus | "All">("All");
   const [search, setSearch] = useState("");
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -206,7 +207,10 @@ export function CharterTable({ charters, onNewCharter, compact = false }: Props)
                   className={`border-b border-border hover:bg-white/[0.03] cursor-pointer transition-colors ${
                     expanded === charter.id ? "bg-white/[0.03]" : ""
                   } ${i === rows.length - 1 && expanded !== charter.id ? "border-b-0" : ""}`}
-                  onClick={() => setExpanded(expanded === charter.id ? null : charter.id)}
+                  onClick={() => {
+                    if (onRowClick) { onRowClick(charter.id); return; }
+                    setExpanded(expanded === charter.id ? null : charter.id);
+                  }}
                 >
                   <td className="px-4 py-3 text-xs text-muted-foreground font-mono whitespace-nowrap">{charter.id}</td>
                   <td className="px-4 py-3">
