@@ -3,6 +3,7 @@ import App from "./App";
 import { DashboardPage }  from "../pages/DashboardPage";
 import { ChartersPage }   from "../pages/ChartersPage";
 import { TasksPage }      from "../pages/TasksPage";
+import { SubtasksPage }   from "../pages/SubtasksPage";
 import { AuditPage }      from "../pages/AuditPage";
 
 function ComingSoon({ title, version }: { title: string; version: string }) {
@@ -28,7 +29,7 @@ export const router = createBrowserRouter([
       { path: "dashboard",   element: <DashboardPage /> },
       { path: "charters",    element: <ChartersPage /> },
       { path: "tasks",       element: <TasksPage /> },
-      { path: "subtasks",    element: <ComingSoon title="Subtasks"    version="v1.2.0" /> },
+      { path: "subtasks",    element: <SubtasksPage /> },
       { path: "assignments", element: <ComingSoon title="Assignments" version="v1.3.0" /> },
       { path: "reporting",   element: <ComingSoon title="Reporting"   version="v1.5.0" /> },
       { path: "audit",       element: <AuditPage /> },
