@@ -1,6 +1,6 @@
 # IntraProjects — Enterprise Architecture & Implementation Guide
 
-> **Repository:** `shiannb0449/uProjects`
+> **Repository:** `shiannb0449/IntraProjects`
 > **Application Name:** IntraProjects
 > **Stack:** React 18 · TypeScript · Tailwind CSS v4 · shadcn/ui · ASP.NET Core · SQL Server · Active Directory
 > **Document Version:** 1.0 · June 2026
@@ -971,7 +971,7 @@ Milestone: v1.5 — Reporting
 [INFRA-008] Create IRepository<T> and IUnitOfWork interfaces
 [INFRA-009] Create CharterRepository implementation
 [INFRA-010] Configure Swagger/OpenAPI
-[INFRA-011] Initialize React project from existing zip (rename uProjects → IntraProjects)
+[INFRA-011] Initialize React project from existing zip (initial React project setup)
 [INFRA-012] Configure Vite environment variables (VITE_API_BASE_URL)
 [INFRA-013] Set up TanStack Query client + Zustand store structure
 [INFRA-014] Set up Axios client with JWT interceptor
@@ -1091,7 +1091,7 @@ dotnet add src/IntraProjects.API package Swashbuckle.AspNetCore
 
 ```bash
 # From the unzipped IntraProjects repo root:
-# 1. Rename "uProjects" → "IntraProjects" in App.tsx (sidebar logo, breadcrumbs)
+# 1. App.tsx already uses IntraProjects branding
 # 2. Update README.md title
 # 3. Add dependencies not yet in package.json:
 pnpm add @tanstack/react-query zustand zod react-hook-form @hookform/resolvers axios
@@ -1269,4 +1269,4 @@ Typography conventions from prototype:
 ---
 
 *IntraProjects Architecture Guide — v1.0 · Generated June 2026*
-*Repository: `shiannb0449/uProjects` · Application: IntraProjects*
+*Repository: `shiannb0449/IntraProjects` · Application: IntraProjects*

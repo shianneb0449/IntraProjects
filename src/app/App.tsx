@@ -341,7 +341,7 @@ export default function App() {
             className="text-lg font-bold text-foreground tracking-tight"
             style={{ fontFamily: "'Outfit', sans-serif" }}
           >
-            u<span className="text-primary">Projects</span>
+            Intra<span className="text-primary">Projects</span>
           </span>
           <span
             className="ml-auto text-[10px] px-1.5 py-0.5 rounded bg-primary/15 text-primary font-medium"
