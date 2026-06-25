@@ -1,0 +1,16 @@
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Application/bin/Debug/net10.0/IntraProjects.Application.deps.json
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Application/bin/Debug/net10.0/IntraProjects.Application.dll
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Application/bin/Debug/net10.0/IntraProjects.Application.pdb
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Application/bin/Debug/net10.0/IntraProjects.Domain.dll
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Application/bin/Debug/net10.0/IntraProjects.Domain.pdb
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Application/obj/Debug/net10.0/IntraProjects.Application.csproj.AssemblyReference.cache
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Application/obj/Debug/net10.0/IntraProjects.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Application/obj/Debug/net10.0/IntraProjects.Application.AssemblyInfoInputs.cache
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Application/obj/Debug/net10.0/IntraProjects.Application.AssemblyInfo.cs
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Application/obj/Debug/net10.0/IntraProjects.Application.csproj.CoreCompileInputs.cache
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Application/obj/Debug/net10.0/IntraProjects.Application.sourcelink.json
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Application/obj/Debug/net10.0/IntraPro.A752FF1D.Up2Date
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Application/obj/Debug/net10.0/IntraProjects.Application.dll
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Application/obj/Debug/net10.0/refint/IntraProjects.Application.dll
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Application/obj/Debug/net10.0/IntraProjects.Application.pdb
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Application/obj/Debug/net10.0/ref/IntraProjects.Application.dll

@@ -1,0 +1,12 @@
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Domain/bin/Debug/net10.0/IntraProjects.Domain.deps.json
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Domain/bin/Debug/net10.0/IntraProjects.Domain.dll
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Domain/bin/Debug/net10.0/IntraProjects.Domain.pdb
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Domain/obj/Debug/net10.0/IntraProjects.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Domain/obj/Debug/net10.0/IntraProjects.Domain.AssemblyInfoInputs.cache
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Domain/obj/Debug/net10.0/IntraProjects.Domain.AssemblyInfo.cs
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Domain/obj/Debug/net10.0/IntraProjects.Domain.csproj.CoreCompileInputs.cache
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Domain/obj/Debug/net10.0/IntraProjects.Domain.sourcelink.json
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Domain/obj/Debug/net10.0/IntraProjects.Domain.dll
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Domain/obj/Debug/net10.0/refint/IntraProjects.Domain.dll
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Domain/obj/Debug/net10.0/IntraProjects.Domain.pdb
+/Users/sbaker/Documents/GitHub/IntraProjects/backend/src/IntraProjects.Domain/obj/Debug/net10.0/ref/IntraProjects.Domain.dll

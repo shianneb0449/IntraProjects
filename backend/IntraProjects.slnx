@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/IntraProjects.API/IntraProjects.API.csproj" />
+    <Project Path="src/IntraProjects.Application/IntraProjects.Application.csproj" />
+    <Project Path="src/IntraProjects.Domain/IntraProjects.Domain.csproj" />
+    <Project Path="src/IntraProjects.Infrastructure/IntraProjects.Infrastructure.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,6 @@
+@IntraProjects.API_HostAddress = http://localhost:5078
+
+GET {{IntraProjects.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
