@@ -18,6 +18,12 @@ public class IntraProjectsDbContext : DbContext
     public DbSet<SubtaskStatus> SubtaskStatuses => Set<SubtaskStatus>();
     public DbSet<Priority> Priorities => Set<Priority>();
     public DbSet<CharterStatusHistory> CharterStatusHistories => Set<CharterStatusHistory>();
+    public DbSet<CharterTeamMember> CharterTeamMembers => Set<CharterTeamMember>();
+    public DbSet<CharterMilestone> CharterMilestones => Set<CharterMilestone>();
+    public DbSet<CharterCostItem> CharterCostItems => Set<CharterCostItem>();
+    public DbSet<CharterVendorPro> CharterVendorPros => Set<CharterVendorPro>();
+    public DbSet<CharterVendorCon> CharterVendorCons => Set<CharterVendorCon>();
+    public DbSet<CharterVendorReference> CharterVendorReferences => Set<CharterVendorReference>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -42,6 +48,10 @@ public class IntraProjectsDbContext : DbContext
             e.Property(x => x.Title).HasMaxLength(300).IsRequired();
             e.Property(x => x.Department).HasMaxLength(100);
             e.Property(x => x.ArchiveReason).HasMaxLength(500);
+            e.Property(x => x.VendorName).HasMaxLength(200);
+            e.Property(x => x.ProductName).HasMaxLength(200);
+            e.Property(x => x.OneTimeCosts).HasColumnType("decimal(12,2)");
+            e.Property(x => x.AnnualPrice).HasColumnType("decimal(12,2)");
             e.HasOne(x => x.Owner).WithMany(u => u.OwnedCharters).HasForeignKey(x => x.OwnerUserId).OnDelete(DeleteBehavior.Restrict);
             e.HasOne(x => x.Status).WithMany().HasForeignKey(x => x.StatusId).OnDelete(DeleteBehavior.Restrict);
             e.HasOne(x => x.Priority).WithMany().HasForeignKey(x => x.PriorityId).OnDelete(DeleteBehavior.Restrict);
@@ -167,6 +177,55 @@ public class IntraProjectsDbContext : DbContext
             e.HasKey(x => x.HistoryId);
             e.HasOne(x => x.Charter).WithMany(c => c.StatusHistory).HasForeignKey(x => x.CharterId).OnDelete(DeleteBehavior.Restrict);
             e.HasIndex(x => new { x.CharterId, x.ChangedAt });
+        });
+
+        modelBuilder.Entity<CharterTeamMember>(e =>
+        {
+            e.HasKey(x => x.TeamMemberId);
+            e.Property(x => x.Name).HasMaxLength(150).IsRequired();
+            e.Property(x => x.Role).HasMaxLength(100);
+            e.Property(x => x.EstimatedHours).HasColumnType("decimal(8,2)");
+            e.HasOne(x => x.Charter).WithMany(c => c.TeamMembers).HasForeignKey(x => x.CharterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.CharterId);
+        });
+
+        modelBuilder.Entity<CharterMilestone>(e =>
+        {
+            e.HasKey(x => x.MilestoneId);
+            e.Property(x => x.Description).HasMaxLength(500).IsRequired();
+            e.HasOne(x => x.Charter).WithMany(c => c.Milestones).HasForeignKey(x => x.CharterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.CharterId);
+        });
+
+        modelBuilder.Entity<CharterCostItem>(e =>
+        {
+            e.HasKey(x => x.CostItemId);
+            e.Property(x => x.Description).HasMaxLength(300).IsRequired();
+            e.Property(x => x.Amount).HasColumnType("decimal(12,2)");
+            e.HasOne(x => x.Charter).WithMany(c => c.CostItems).HasForeignKey(x => x.CharterId).OnDelete(DeleteBehavior.Cascade);
+            e.HasIndex(x => x.CharterId);
+        });
+
+        modelBuilder.Entity<CharterVendorPro>(e =>
+        {
+            e.HasKey(x => x.VendorProId);
+            e.Property(x => x.Text).HasMaxLength(500).IsRequired();
+            e.HasOne(x => x.Charter).WithMany(c => c.VendorPros).HasForeignKey(x => x.CharterId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        modelBuilder.Entity<CharterVendorCon>(e =>
+        {
+            e.HasKey(x => x.VendorConId);
+            e.Property(x => x.Text).HasMaxLength(500).IsRequired();
+            e.HasOne(x => x.Charter).WithMany(c => c.VendorCons).HasForeignKey(x => x.CharterId).OnDelete(DeleteBehavior.Cascade);
+        });
+
+        modelBuilder.Entity<CharterVendorReference>(e =>
+        {
+            e.HasKey(x => x.VendorReferenceId);
+            e.Property(x => x.Contact).HasMaxLength(200).IsRequired();
+            e.Property(x => x.ContactInfo).HasMaxLength(200);
+            e.HasOne(x => x.Charter).WithMany(c => c.VendorReferences).HasForeignKey(x => x.CharterId).OnDelete(DeleteBehavior.Cascade);
         });
     }
 }

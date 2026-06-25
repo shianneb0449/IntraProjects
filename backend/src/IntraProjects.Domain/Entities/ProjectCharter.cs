@@ -3,7 +3,7 @@ namespace IntraProjects.Domain.Entities;
 public class ProjectCharter
 {
     public int CharterId { get; set; }
-    public string CharterNumber { get; set; } = string.Empty;  // CHR-0041
+    public string CharterNumber { get; set; } = string.Empty;
     public string Title { get; set; } = string.Empty;
     public string? Description { get; set; }
     public string? Department { get; set; }
@@ -24,6 +24,14 @@ public class ProjectCharter
     public DateOnly? TargetDate { get; set; }
     public DateOnly? ActualCloseDate { get; set; }
 
+    // Vendor fields
+    public bool HasVendor { get; set; } = false;
+    public string? VendorName { get; set; }
+    public string? ProductName { get; set; }
+    public decimal? OneTimeCosts { get; set; }
+    public decimal? AnnualPrice { get; set; }
+    public string? VendorNotes { get; set; }
+
     public bool IsArchived { get; set; } = false;
     public DateTimeOffset? ArchivedDate { get; set; }
     public int? ArchivedByUserId { get; set; }
@@ -38,4 +46,10 @@ public class ProjectCharter
     public ICollection<ProjectTask> Tasks { get; set; } = [];
     public ICollection<CharterStatusHistory> StatusHistory { get; set; } = [];
     public ICollection<AuditEvent> AuditEvents { get; set; } = [];
+    public ICollection<CharterTeamMember> TeamMembers { get; set; } = [];
+    public ICollection<CharterMilestone> Milestones { get; set; } = [];
+    public ICollection<CharterCostItem> CostItems { get; set; } = [];
+    public ICollection<CharterVendorPro> VendorPros { get; set; } = [];
+    public ICollection<CharterVendorCon> VendorCons { get; set; } = [];
+    public ICollection<CharterVendorReference> VendorReferences { get; set; } = [];
 }

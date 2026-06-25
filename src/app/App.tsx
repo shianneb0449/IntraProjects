@@ -83,9 +83,9 @@ function AppShell() {
         </nav>
         <div className="p-4 border-t" style={{ borderColor: "var(--sidebar-border)" }}>
           <div className="flex items-center gap-3">
-            <div className="size-8 rounded-full flex items-center justify-center text-xs font-semibold font-mono flex-shrink-0" style={{ background: "rgba(59,130,246,0.2)", color: "var(--primary)" }}>SB</div>
+            <div className="size-8 rounded-full flex items-center justify-center text-xs font-semibold font-mono flex-shrink-0" style={{ background: "rgba(59,130,246,0.2)", color: "var(--primary)" }}>SP</div>
             <div className="min-w-0">
-              <div className="text-xs font-medium truncate" style={{ color: "var(--sidebar-foreground)" }}>S. Burnett</div>
+              <div className="text-xs font-medium truncate" style={{ color: "var(--sidebar-foreground)" }}>Shianne Pope</div>
               <div className="text-[10px] truncate" style={{ color: "var(--sidebar-foreground)", opacity: 0.5 }}>Project Owner</div>
             </div>
             <Shield size={13} className="ml-auto flex-shrink-0" style={{ color: "var(--sidebar-foreground)", opacity: 0.4 }} />

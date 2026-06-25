@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IntraProjects.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2c7f963d5adc7d9494ccbbb58da01e1ec390a8b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61bb4dcc0389de575202bf2a805ec111832e0255")]
 [assembly: System.Reflection.AssemblyProductAttribute("IntraProjects.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IntraProjects.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
